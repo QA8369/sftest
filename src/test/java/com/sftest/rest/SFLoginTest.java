@@ -45,8 +45,8 @@ public class SFLoginTest {
 //	.queryParam("grant_type", "password")
 //	.queryParam("client_id", "3MVG9szVa2RxsqBasl6lquPf_tt_9QqBiVn3UO_rYe6tXPMG5ORRlqWQUjolPoLQPndEmoq87Rz2VhAYIvmtI")
 //	.queryParam("client_secret", "6505635864408707693")
-//	.queryParam("username", "rajeshwar.kottala1@gmail.com")
-//	.queryParam("password", "Suhith@1234").when()
+//	.queryParam("username", "test23@gmail.com")
+//	.queryParam("password", "kkk").when()
 //	.post(url).then().log().body().statusCode(200);
 
 	ResponseBody response = given()
