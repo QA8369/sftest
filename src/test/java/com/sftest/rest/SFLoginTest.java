@@ -28,8 +28,8 @@ public class SFLoginTest {
 		// grant_type=password&
 		// client_id=3MVG9szVa2RxsqBasl6lquPf_tt_9QqBiVn3UO_rYe6tXPMG5ORRlqWQUjolPoLQPndEmoq87Rz2VhAYIvmtI&
 		// client_secret=6505635864408707693&
-		// username=rajeshwar.kottala1@gmail.com&
-		// password=Suhith@1234
+		// username=test@gmail.com&
+		// password=xxxx
 		
 		String base_uri = "https://login.salesforce.com/services/oauth2";
 		String url = "/token";
