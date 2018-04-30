@@ -74,13 +74,6 @@ public class SFLoginTest {
 	System.out.println(loginResponse.toString());
 	
 	
-//	given()
-//	.log().all()
-//	.accept(ContentType.JSON)
-//	.contentType(ContentType.JSON)
-//	.when()
-//	.post("https://login.salesforce.com/services/oauth2/token?grant_type=password&client_id=3MVG9szVa2RxsqBasl6lquPf_tt_9QqBiVn3UO_rYe6tXPMG5ORRlqWQUjolPoLQPndEmoq87Rz2VhAYIvmtI&client_secret=6505635864408707693&username=rajeshwar.kottala1@gmail.com&password=Suhith@1234").then().statusCode(200);
-
 	}
 
 }
