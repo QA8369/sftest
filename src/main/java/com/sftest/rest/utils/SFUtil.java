@@ -9,8 +9,8 @@ package com.sftest.rest.utils;
 	import java.io.FileNotFoundException;
 
 	import java.io.IOException;
-
-	import java.util.Properties;
+import java.io.InputStream;
+import java.util.Properties;
 
 
 
@@ -24,21 +24,26 @@ package com.sftest.rest.utils;
 
 			// TODO Auto-generated constructor stub
 
-			ClassLoader classLoader = getClass().getClassLoader();
+//			ClassLoader classLoader = getClass().getClassLoader();
 
 			
 
 			try {
 
-				File file = new File(classLoader.getResource("resources.properties").getFile());
-
-				FileInputStream prop = new FileInputStream(file);
-
+//				File file = new File(classLoader.getResource("resources.properties").getFile());
+//
+//				FileInputStream prop = new FileInputStream(file);
+//
+//				properties = new Properties();
+//
+//				properties.load(prop);
 				
+				InputStream file = this.getClass().getClassLoader().getResourceAsStream("resources.properties");
 
 				properties = new Properties();
 
-				properties.load(prop);
+				properties.load(file);
+
 
 				
 
