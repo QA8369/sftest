@@ -111,4 +111,27 @@ public class CreateAccountTest extends BaseFixture{
 	}
 	
 
+	@Test
+	public void test_creatAccount_unauthorized_fail() {
+		
+		String createbody="{\n" + 
+				"   \n" + 
+				"    \"Name\": \"Test134\",\n" + 
+				"    \n" + 
+				"    \n" + 
+				"    \"AccountNumber\": \"134\"\n" + 
+				"   \n" + 
+				"   \n" + 
+				"}";
+		
+		given()
+		.baseUri(sfutil.getProperty("account_url"))
+		.and().accept(ContentType.JSON).contentType(ContentType.JSON)
+		.header("Authorization" ,"auth1_token")
+		.body(createbody)
+		.when()
+		.post("/Account")
+		.then().log().body().statusCode(402);
+		
+	}
 }
